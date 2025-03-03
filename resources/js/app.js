@@ -6,7 +6,12 @@ import MainLayout from './Layouts/MainLayout.vue';
 createInertiaApp({
     resolve: name => {
     const pages = import.meta.glob('./Pages/**/*.vue', { eager: true })
-    return pages[`./Pages/${name}.vue`]
+    let page = pages[`./Pages/${name}.vue`];
+    
+    if(!page.default.layout) {
+        page.default.layout = MainLayout;
+    }
+    return page;
     },
     setup({ el, App, props, plugin }) {
     createSSRApp({ render: () => h(App, props) })
@@ -15,6 +20,3 @@ createInertiaApp({
         .mount(el)
     },
 })
-
-
-
