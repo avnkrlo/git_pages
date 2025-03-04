@@ -14,9 +14,13 @@ createInertiaApp({
     return page;
     },
     setup({ el, App, props, plugin }) {
-    createSSRApp({ render: () => h(App, props) })
-        .use(plugin)
+        const app = createSSRApp({
+            render: () => h(App, props)
+        });
+    app.use(plugin)
         .use(ZiggyVue)
-        .mount(el)
+        .mount(el);
+
+    return app;
     },
-})
+});

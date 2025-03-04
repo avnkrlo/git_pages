@@ -17,7 +17,8 @@ export default defineConfig({
     resolve: {
         alias: {
             '@': 'resources/js',
-            'ziggy-js': path.resolve('./vendor/tightenco/ziggy/dist/index.esm.js')
+            'ziggy-js': path.resolve('./vendor/tightenco/ziggy/dist/index.esm.js'),
+            '@flowbite': '../node_modules/flowbite'
         }
     }
 });

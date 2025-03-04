@@ -8,7 +8,7 @@ const _sfc_main = {
   __ssrInlineRender: true,
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<div${ssrRenderAttrs(_attrs)}><h1 class="text-2xl font-bold">Welcome to Laravel + Vue + Inertia.js</h1></div>`);
+      _push(`<div${ssrRenderAttrs(_attrs)}></div>`);
     };
   }
 };
