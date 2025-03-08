@@ -4,6 +4,7 @@ import { createInertiaApp } from '@inertiajs/vue3'
 import { ZiggyVue } from 'ziggy-js';
 import { Ziggy } from './ziggy.js';
 import MainLayout from './Layouts/MainLayout.vue';
+import 'flowbite';
 
 createInertiaApp({
     resolve: name => {
