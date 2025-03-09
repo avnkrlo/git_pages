@@ -26,7 +26,7 @@
                   class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
                   href="#"
                 >
-                  Experience
+                  Work Experience
                 </a>
               </li>
   
@@ -44,7 +44,7 @@
                   class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
                   href="#"
                 >
-                  Hobbies
+                  About
                 </a>
               </li>
 
@@ -53,7 +53,7 @@
                   class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
                   href="#"
                 >
-                  About Me
+                  Contact
                 </a>
               </li>
             </ul>
