@@ -1,0 +1,10 @@
+{
+  "\u0000plugin-vue:export-helper": [],
+  "resources/js/Components/Footer.vue": [],
+  "resources/js/Components/Navbar.vue": [],
+  "resources/js/Layouts/MainLayout.vue": [],
+  "resources/js/Pages/Users/Home.vue": [],
+  "resources/js/ssr.js": [],
+  "resources/js/ziggy.js": [],
+  "vendor/tightenco/ziggy/dist/index.esm.js": []
+}
