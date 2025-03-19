@@ -1,4 +1,6 @@
 <script setup>
+import { Link } from '@inertiajs/vue3';
+import { ref } from 'vue';
 
 </script>
 
@@ -17,39 +19,31 @@
           <nav aria-label="Global" class="md:block">
             <ul class="flex items-center gap-6 text-sm">
               <li>
-                <a
-                  class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                  href="#"
-                >
+                <Link class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                  :href="route('experience.index')">
                   Work Experience
-                </a>
+                </Link>
               </li>
   
               <li>
-                <a
-                  class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                  href="#"
-                >
+                <Link class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                :href="route('project.index')">
                   Projects
-                </a>
+                </Link>
               </li>
   
               <li>
-                <a
-                  class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                  href="#"
-                >
+                <Link class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                :href="route('about.index')">
                   About
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
-                  class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                  href="#"
-                >
+                <Link class="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                :href="route('contact.index')">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>

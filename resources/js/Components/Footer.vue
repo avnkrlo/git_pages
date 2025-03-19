@@ -7,9 +7,9 @@
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div class="md:flex md:justify-between">
 
-                <div class="grid grid-cols-3 mx-auto mb-6 md:mb-0">
+                <div class="grid grid-cols-4 mx-auto mb-6 md:mb-0">
                     <div>
-                        <img class="rounded-full w-96 h-96" src="C:\Users\Miki\Documents\GitHub\github_pages\public\Images\AKOG.jpg" alt="image description">
+                        <img class="rounded-full w-64 h-64" src="C:\Users\aivan\Documents\GitHub\git_pages\public\Images\AKOG.jpg" alt="image description">
                     </div>
 
                     <div>
