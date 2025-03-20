@@ -5,6 +5,12 @@ import vue from '@vitejs/plugin-vue';
 import path from 'path';
 
 export default defineConfig({
+    server: {
+        host: 'git_pages.test',
+    },
+    define: {
+        'process.env.VITE_APP_URL': '"http://git_pages.test"',
+    },
     plugins: [
         laravel({
             input: ['resources/css/app.css', 'resources/js/app.js'],

@@ -1,6 +1,6 @@
 import { useSSRContext, mergeProps, unref, withCtx, createTextVNode, createSSRApp, h as h$1 } from "vue";
-import { ssrRenderAttrs, ssrRenderComponent, ssrRenderAttr, ssrRenderSlot } from "vue/server-renderer";
-import { Link, createInertiaApp } from "@inertiajs/vue3";
+import { ssrRenderAttrs, ssrRenderComponent, ssrRenderAttr, ssrRenderSlot, ssrInterpolate } from "vue/server-renderer";
+import { Link, usePage, createInertiaApp } from "@inertiajs/vue3";
 import { Img } from "vue-flux";
 import createServer from "@inertiajs/vue3/server";
 import { renderToString } from "@vue/server-renderer";
@@ -176,11 +176,14 @@ const _sfc_main$2 = {
   __name: "MainLayout",
   __ssrInlineRender: true,
   setup(__props) {
+    const page = usePage();
+    console.log(page.props.value);
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(_sfc_main$6, null, null, _parent));
       _push(ssrRenderComponent(Jumbotron, null, null, _parent));
       _push(ssrRenderComponent(Breadcrumb, null, null, _parent));
+      _push(`<div><h1>${ssrInterpolate(unref(page).props.value.appUrl)}</h1></div>`);
       ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent);
       _push(ssrRenderComponent(Footer, null, null, _parent));
       _push(`<!--]-->`);
