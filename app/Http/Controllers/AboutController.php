@@ -13,9 +13,7 @@ class AboutController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Users/About', [
-            'users' => User::all(),
-        ]);
+        return Inertia::render('Users/About');
     }
 
     /**

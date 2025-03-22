@@ -1,6 +1,6 @@
-import { useSSRContext, mergeProps, unref, withCtx, createTextVNode, createSSRApp, h as h$1 } from "vue";
-import { ssrRenderAttrs, ssrRenderComponent, ssrRenderAttr, ssrRenderSlot } from "vue/server-renderer";
-import { Link, createInertiaApp } from "@inertiajs/vue3";
+import { useSSRContext, mergeProps, createSSRApp, h as h$1 } from "vue";
+import { ssrRenderAttrs, ssrRenderAttr, ssrRenderSlot, ssrRenderComponent } from "vue/server-renderer";
+import { createInertiaApp, Link } from "@inertiajs/vue3";
 import { Img } from "vue-flux";
 import createServer from "@inertiajs/vue3/server";
 import { renderToString } from "@vue/server-renderer";
@@ -58,71 +58,7 @@ const _sfc_main$6 = {
   __ssrInlineRender: true,
   setup(__props) {
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<header${ssrRenderAttrs(mergeProps({ class: "bg-white dark:bg-gray-900" }, _attrs))}><div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8"><div class="flex h-16 items-center justify-between"><div class="flex-1 md:flex md:items-center md:gap-12"><a class="block text-teal-600 dark:text-teal-300" href="#"><span class="sr-only">Home</span><h1 class="flex items-center text-5xl font-extrabold dark:text-white">Flowbite<span class="bg-blue-100 text-blue-800 text-2xl font-semibold me-2 px-2.5 py-0.5 rounded-sm dark:bg-blue-200 dark:text-blue-800 ms-2">PRO</span></h1></a></div><div class="md:flex md:items-center md:gap-12"><nav aria-label="Global" class="md:block"><ul class="flex items-center gap-6 text-sm"><li>`);
-      _push(ssrRenderComponent(unref(Link), {
-        class: "text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75",
-        href: _ctx.route("experience.index")
-      }, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(` Work Experience `);
-          } else {
-            return [
-              createTextVNode(" Work Experience ")
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(`</li><li>`);
-      _push(ssrRenderComponent(unref(Link), {
-        class: "text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75",
-        href: _ctx.route("project.index")
-      }, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(` Projects `);
-          } else {
-            return [
-              createTextVNode(" Projects ")
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(`</li><li>`);
-      _push(ssrRenderComponent(unref(Link), {
-        class: "text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75",
-        href: _ctx.route("about.index")
-      }, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(` About `);
-          } else {
-            return [
-              createTextVNode(" About ")
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(`</li><li>`);
-      _push(ssrRenderComponent(unref(Link), {
-        class: "text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75",
-        href: _ctx.route("contact.index")
-      }, {
-        default: withCtx((_, _push2, _parent2, _scopeId) => {
-          if (_push2) {
-            _push2(` Contact `);
-          } else {
-            return [
-              createTextVNode(" Contact ")
-            ];
-          }
-        }),
-        _: 1
-      }, _parent));
-      _push(`</li></ul></nav></div></div></div></header>`);
+      _push(`<nav${ssrRenderAttrs(mergeProps({ class: "bg-white border-gray-200 dark:bg-gray-900" }, _attrs))}><div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"><a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse"><img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo"><span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span></a><button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false"><span class="sr-only">Open main menu</span><svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"></path></svg></button><div class="hidden w-full md:block md:w-auto" id="navbar-default"><ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"><li><a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a></li><li><a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a></li><li><a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a></li><li><a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a></li><li><a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a></li></ul></div></div></nav>`);
     };
   }
 };

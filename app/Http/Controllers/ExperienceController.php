@@ -13,9 +13,7 @@ class ExperienceController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Users/Experience', [
-            'users' => User::all(),
-        ]);
+        return Inertia::render('Users/Experience');
     }
 
     /**

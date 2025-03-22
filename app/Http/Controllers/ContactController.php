@@ -13,9 +13,7 @@ class ContactController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Users/Contact', [
-            'users' => User::all(),
-        ]);
+        return Inertia::render('Users/Contact');
     }
 
     /**

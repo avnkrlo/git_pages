@@ -13,9 +13,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Users/Project', [
-            'users' => User::all(),
-        ]);
+        return Inertia::render('Users/Project');
     }
 
     /**
